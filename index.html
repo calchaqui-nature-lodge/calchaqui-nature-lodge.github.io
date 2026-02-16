@@ -129,8 +129,7 @@ nav ul a:hover {
 .hero {
     background: linear-gradient(rgba(139, 69, 19, 0.3), rgba(139, 69, 19, 0.3)),
                 url('images/welcome.jpg') center/cover;
-    .hero {
-    min-height: 60vh;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,8 +182,7 @@ p {
 
 .welcome {
     background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
-                url('images/panoramas.jpg') center/cover no-repeat;
-
+                url('images/panoramas.jpg') center/cover fixed;
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -535,7 +533,8 @@ footer {
     border-radius: 8px;
     object-fit: cover;
 	}
-	
+}
+/* Lightbox Styles */
 #lightbox {
     display: none;
     position: fixed;
@@ -549,17 +548,12 @@ footer {
     align-items: center;
 }
 
-#lightbox.active {
-    display: flex;
-}
-
 #lightbox-img {
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
     transition: opacity 0.3s ease;
 }
-
 
 .lb-nav {
     position: absolute;
@@ -722,7 +716,7 @@ footer {
         <div class="cabana-card">
             <div class="cabana-image" onclick="openGallery('parral', 5)" style="background-image:url('images/parral.jpg');"></div>
             <h3>Cabaña Parral</h3>
-            <p><strong>Hasta 2 personas</strong> • Acogedora para parejas, baño privado, agua caliente 24h, estufa a leña. Cocina compartida en el quincho.</p>
+            <p><strong>Hasta 2 personas</strong> • Baño privado, agua caliente 24h, estufa a leña. Cocina compartida en el quincho.</p>
         </div>
     </div>
 </section>
