@@ -124,8 +124,6 @@ nav ul a:hover {
     color: #D2691E;
 }
 
-/* HERO IDENTISCH ZUR DE VERSION */
-
 .hero {
     background: linear-gradient(rgba(139, 69, 19, 0.3), rgba(139, 69, 19, 0.3)),
                 url('images/welcome.jpg') center/cover;
@@ -150,15 +148,10 @@ nav ul a:hover {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
 }
 
-/* SECTIONS IDENTISCH */
-
 section {
     max-width: 1200px;
     margin: 4rem auto;
     padding: 0 2rem;
-    scroll-margin-top: 100px;
-}
-[id] {
     scroll-margin-top: 120px;
 }
 
@@ -182,7 +175,7 @@ p {
 
 .welcome {
     background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
-                url('images/panoramas.jpg') center/cover fixed;
+                url('images/panoramas.jpg') center/cover;
     padding: 3rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -231,11 +224,6 @@ p {
     transition: transform 0.3s;
 }
 
-.cabana-card:hover {
-    transform: none;
-
-}
-
 .cabana-image {
     width: 100%;
     height: 200px;
@@ -251,12 +239,10 @@ p {
 
 .cabana-image:hover {
     transform: scale(1.05);
-
 }
 
-
 .cabana-image::after {
-    content: "📷 Ver fotos";
+    content: "📷 View photos";
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -268,25 +254,25 @@ p {
 }
 
 .camping-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            align-items: center;
-            background-color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 
-        .camping-grid ul {
-            list-style: none;
-            padding-left: 0;
-        }
+.camping-grid ul {
+    list-style: none;
+    padding-left: 0;
+}
 
-        .camping-grid li {
-            padding: 0.3rem 0;
-            font-size: 1rem;
-        }
+.camping-grid li {
+    padding: 0.3rem 0;
+    font-size: 1rem;
+}
 
 .features-grid {
     display: grid;
@@ -301,6 +287,16 @@ p {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     text-align: center;
+}
+
+.feature-item h3 {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.feature-item p {
+    font-size: 0.85rem;
+    margin-bottom: 0;
 }
 
 .feature-image {
@@ -322,18 +318,14 @@ p {
     object-fit: cover;
 }
 
-/* Placeholder backgrounds for images that don't exist yet */
+/* Placeholder backgrounds */
 .hotwater-placeholder {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.hotwater-placeholder::before {
-    content: "💧";
-    font-size: 4rem;
-}
+.hotwater-placeholder::before { content: "💧"; font-size: 4rem; }
 
 .wifi-placeholder {
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
@@ -341,24 +333,15 @@ p {
     align-items: center;
     justify-content: center;
 }
+.wifi-placeholder::before { content: "📶"; font-size: 4rem; }
 
-.wifi-placeholder::before {
-    content: "📶";
-    font-size: 4rem;
-}
-
-/* Excursion placeholders */
 .ruta40-placeholder {
     background: linear-gradient(135deg, #FA8BFF 0%, #2BD2FF 90%);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.ruta40-placeholder::before {
-    content: "🛣️";
-    font-size: 4rem;
-}
+.ruta40-placeholder::before { content: "🛣️"; font-size: 4rem; }
 
 .pachamama-placeholder {
     background: linear-gradient(135deg, #FDEB71 0%, #F8D800 100%);
@@ -366,11 +349,7 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-.pachamama-placeholder::before {
-    content: "🏛️";
-    font-size: 4rem;
-}
+.pachamama-placeholder::before { content: "🏛️"; font-size: 4rem; }
 
 .quilmes-placeholder {
     background: linear-gradient(135deg, #FEE140 0%, #FA709A 100%);
@@ -378,11 +357,7 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-.quilmes-placeholder::before {
-    content: "🏺";
-    font-size: 4rem;
-}
+.quilmes-placeholder::before { content: "🏺"; font-size: 4rem; }
 
 .observatory-placeholder {
     background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
@@ -390,11 +365,7 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-.observatory-placeholder::before {
-    content: "🔭";
-    font-size: 4rem;
-}
+.observatory-placeholder::before { content: "🔭"; font-size: 4rem; }
 
 .laguna-placeholder {
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
@@ -402,11 +373,7 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-.laguna-placeholder::before {
-    content: "🌊";
-    font-size: 4rem;
-}
+.laguna-placeholder::before { content: "🌊"; font-size: 4rem; }
 
 .cafayate-placeholder {
     background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
@@ -414,11 +381,7 @@ p {
     align-items: center;
     justify-content: center;
 }
-
-.cafayate-placeholder::before {
-    content: "🍷";
-    font-size: 4rem;
-}
+.cafayate-placeholder::before { content: "🍷"; font-size: 4rem; }
 
 .ausfluge-list {
     display: grid;
@@ -459,14 +422,6 @@ p {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.kontakt {
-    background-color: #8B4513;
-    color: white;
-    padding: 3rem;
-    border-radius: 10px;
-    text-align: center;
-}
-
 footer {
     background-color: #654321;
     color: white;
@@ -475,66 +430,122 @@ footer {
     margin-top: 4rem;
 }
 
-/* RESPONSIVE IDENTISCH */
+.eco-note {
+    padding: 0.8rem;
+    margin: 0 0 1.2rem 0;
+}
 
+.eco-note h3 {
+    color: #2E7D32;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.eco-note p {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+.info-box {
+    margin-bottom: 0.25rem;
+    padding: 0.6rem;
+}
+
+.info-box h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.15rem;
+}
+
+.info-box p {
+    font-size: 0.88rem;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+/* ========= RESPONSIVE MOBILE ========= */
 @media (max-width: 768px) {
+    header {
+        position: sticky;
+        top: 0;
+        padding: 0.5rem 0;
+    }
+
     .nav-top {
-        flex-direction: column;
-        gap: 0.8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 0.5rem;
+        position: static;
     }
 
     .logo {
         position: static;
     }
 
+    .logo img {
+        height: 35px;
+    }
+
     .site-title {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .nav-bottom {
         flex-direction: column;
-        gap: 1rem;
+        gap: 0.5rem;
     }
 
     nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem 0.8rem;
+        padding: 0;
+    }
+
+    nav ul a {
+        font-size: 0.85rem;
+    }
+
+    .language-switcher {
+        margin-top: 5px;
+        justify-content: center;
+    }
+
+    section {
+        scroll-margin-top: 180px;
+        margin: 2rem auto;
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .hero p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     h2 {
-	
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .features-grid,
-    .ausfluge-list {
-        grid-template-columns: 1fr;
-    }
-
-    .welcome-content {
-        grid-template-columns: 1fr;
-        gap: 0;
-    }
-
+    .ausfluge-list,
+    .welcome-content,
     .camping-grid {
         grid-template-columns: 1fr;
     }
-	.camping-grid img {
-    width: 100%;
-    border-radius: 8px;
-    object-fit: cover;
-	}
+
+    .camping-grid img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+    }
 }
-/* Lightbox Styles */
+
+/* ========= LIGHTBOX ========= */
 #lightbox {
     display: none;
     position: fixed;
@@ -576,74 +587,6 @@ footer {
 .lb-btn:hover {
     background: rgba(139, 69, 19, 1);
 }
-
-/* Eco Note Styles */
-.eco-note {
-    padding: 0.8rem;
-    margin: 0 0 1.2rem 0;
-}
-
-.eco-note h3 {
-    color: #2E7D32;
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-}
-
-.eco-note p {
-    font-size: 0.85rem;
-    line-height: 1.3;
-    margin-bottom: 0;
-}
-
-/* Feature Item Overrides */
-.feature-item {
-    padding: 0.8rem;
-}
-
-.feature-item h3 {
-    font-size: 1rem;
-    margin-bottom: 0.2rem;
-}
-
-.feature-item p {
-    font-size: 0.85rem;
-    margin-bottom: 0;
-}
-
-/* Ausflug Item Styles */
-.ausflug-item {
-    padding: 0.4rem 0;
-    margin-bottom: 0.2rem;
-}
-
-.ausflug-item h3 {
-    font-size: 1.15rem;
-    margin-bottom: 0.2rem;
-}
-
-.ausflug-item p {
-    font-size: 0.95rem;
-    line-height: 1.3;
-    margin-bottom: 0;
-}
-
-/* Info Box Styles */
-.info-box {
-    margin-bottom: 0.25rem;
-    padding: 0.6rem;
-}
-
-.info-box h3 {
-    font-size: 1.05rem;
-    margin-bottom: 0.15rem;
-}
-
-.info-box p {
-    font-size: 0.88rem;
-    margin-bottom: 0;
-    line-height: 1.3;
-}
-
     </style>
 </head>
 <body>
@@ -677,11 +620,8 @@ footer {
 
 <section class="hero">
     <h1>Calchaquí Nature Lodge</h1>
-   <p>Accommodation with cabañas and camping in the heart of Valle Calchaquí nature.</p>
-
+    <p>Accommodation with cabañas and camping in the heart of Valle Calchaquí nature.</p>
 </section>
-
-
 
 <section id="welcome">
     <div class="welcome">
@@ -716,7 +656,7 @@ footer {
         <div class="cabana-card">
             <div class="cabana-image" onclick="openGallery('parral', 5)" style="background-image:url('images/parral.jpg');"></div>
             <h3>Cabaña Parral</h3>
-            <p><strong>Up to 2 people</strong> • Cozy for couples with private bathroom, 24h hot water, wood stove. Shared kitchen in the quincho.</p>
+            <p><strong>Up to 2 people</strong> • Private bathroom, 24h hot water, wood stove. Shared kitchen in the quincho.</p>
         </div>
     </div>
 </section>
@@ -743,12 +683,12 @@ footer {
 
 <section id="amenities">
     <h2 style="margin-bottom: 1.2rem;">What We Offer</h2>
-    
+
     <div class="eco-note">
         <h3>🌞 Solar Energy – Living in harmony with nature</h3>
         <p>Our lodge runs 100% on solar energy, allowing us to preserve this natural paradise. To maintain this balance, we ask you to avoid high-consumption electrical devices such as hair dryers or electric kettles. This is part of our authentic, off-grid mountain experience.</p>
     </div>
-    
+
     <div class="features-grid">
         <div class="feature-item">
             <div class="feature-image" onclick="openGallery('pool', 5)" style="cursor: pointer;"><img src="images/pool.jpg" alt="Pool"></div>
@@ -756,7 +696,7 @@ footer {
             <p>Cool off with valley views</p>
         </div>
         <div class="feature-item">
-            <div class="feature-image" onclick="openGallery('panoramas', 5)" style="cursor: pointer;"><img src="images/panoramas.jpg" alt="Vistas"></div>
+            <div class="feature-image" onclick="openGallery('panoramas', 5)" style="cursor: pointer;"><img src="images/panoramas.jpg" alt="Views"></div>
             <h3>Panoramic Views</h3>
             <p>Stunning valley views</p>
         </div>
@@ -766,20 +706,20 @@ footer {
             <p>Wood-fired kitchen and clay oven</p>
         </div>
         <div class="feature-item">
-            <div class="feature-image" onclick="openGallery('stars', 5)" style="cursor: pointer;"><img src="images/stars.jpg" alt="Estrellas"></div>
+            <div class="feature-image" onclick="openGallery('stars', 5)" style="cursor: pointer;"><img src="images/stars.jpg" alt="Stars"></div>
             <h3>Starry Sky</h3>
             <p>Perfect for stargazing</p>
         </div>
         <div class="feature-item">
             <div class="feature-image hotwater-placeholder" onclick="openGallery('hotwater', 5)" style="cursor: pointer;">
-                <img src="images/hotwater.jpg" alt="Agua Caliente" style="display: none;" onload="this.style.display='block'; this.parentElement.classList.remove('hotwater-placeholder');">
+                <img src="images/hotwater.jpg" alt="Hot Water" style="display:none;" onload="this.style.display='block'; this.parentElement.classList.remove('hotwater-placeholder');">
             </div>
             <h3>Hot Water 24h</h3>
             <p>Hot water all day</p>
         </div>
         <div class="feature-item">
             <div class="feature-image wifi-placeholder" onclick="openGallery('wifi', 5)" style="cursor: pointer;">
-                <img src="images/wifi.jpg" alt="Internet" style="display: none;" onload="this.style.display='block'; this.parentElement.classList.remove('wifi-placeholder');">
+                <img src="images/wifi.jpg" alt="Internet" style="display:none;" onload="this.style.display='block'; this.parentElement.classList.remove('wifi-placeholder');">
             </div>
             <h3>Internet</h3>
             <p>WiFi available</p>
@@ -792,42 +732,42 @@ footer {
     <div class="ausfluge-list">
         <div class="ausflug-item">
             <div class="feature-image ruta40-placeholder" onclick="openGallery('ruta40', 5)" style="cursor: pointer;">
-                <img src="images/ruta40.jpg" alt="Route 40" style="display: none;" onload="this.style.display='block'; this.parentElement.classList.remove('ruta40-placeholder');">
+                <img src="images/ruta40.jpg" alt="Route 40" style="display:none;" onload="this.style.display='block'; this.parentElement.classList.remove('ruta40-placeholder');">
             </div>
             <h3>Route 40</h3>
-            <p>Estamos cerca de la legendaria Route 40, rodeados de pequeños pueblos encantadores. Cada uno con su propia historia, artesanías y tradiciones que te transportan al auténtico norte argentino.</p>
+            <p>We are close to the legendary Route 40, surrounded by charming small towns. Each one with its own history, handicrafts and traditions that take you to the authentic Argentine north.</p>
         </div>
         <div class="ausflug-item">
             <div class="feature-image pachamama-placeholder" onclick="openGallery('pachamama', 5)" style="cursor: pointer;">
-                <img src="images/pachamama.jpg" alt="Museo Pachamama" style="display: none;" onload="this.style.display='block'; this.parentElement.classList.remove('pachamama-placeholder');">
+                <img src="images/pachamama.jpg" alt="Pachamama Museum" style="display:none;" onload="this.style.display='block'; this.parentElement.classList.remove('pachamama-placeholder');">
             </div>
             <h3>Pachamama Museum (8 km)</h3>
             <p>Immerse yourself in the region's pre-Columbian culture. Fascinating exhibitions of the indigenous peoples of Valle Calchaquí.</p>
         </div>
         <div class="ausflug-item">
             <div class="feature-image quilmes-placeholder" onclick="openGallery('quilmes', 5)" style="cursor: pointer;">
-                <img src="images/quilmes.jpg" alt="Quilmes" style="display: none;" onload="this.style.display='block'; this.parentElement.classList.remove('quilmes-placeholder');">
+                <img src="images/quilmes.jpg" alt="Quilmes" style="display:none;" onload="this.style.display='block'; this.parentElement.classList.remove('quilmes-placeholder');">
             </div>
             <h3>Sacred City of Quilmes (30 km)</h3>
             <p>One of Argentina's most important archaeological sites. The well-preserved ruins tell the story of the Quilmes people's resistance.</p>
         </div>
         <div class="ausflug-item">
             <div class="feature-image observatory-placeholder" onclick="openGallery('observatory', 5)" style="cursor: pointer;">
-                <img src="images/observatory.jpg" alt="Observatorio" style="display: none;" onload="this.style.display='block'; this.parentElement.classList.remove('observatory-placeholder');">
+                <img src="images/observatory.jpg" alt="Observatory" style="display:none;" onload="this.style.display='block'; this.parentElement.classList.remove('observatory-placeholder');">
             </div>
             <h3>Ampimpa Observatory (8.5 km)</h3>
             <p>At 2,560 meters altitude is a renowned astronomical observatory, a popular destination for astrotourism.</p>
         </div>
         <div class="ausflug-item">
             <div class="feature-image laguna-placeholder" onclick="openGallery('laguna', 5)" style="cursor: pointer;">
-                <img src="images/laguna.jpg" alt="Laguna de los Amaicheños" style="display: none;" onload="this.style.display='block'; this.parentElement.classList.remove('laguna-placeholder');">
+                <img src="images/laguna.jpg" alt="Laguna de los Amaicheños" style="display:none;" onload="this.style.display='block'; this.parentElement.classList.remove('laguna-placeholder');">
             </div>
             <h3>Laguna de los Amaicheños</h3>
             <p>A high site in the Cumbres Calchaquíes, traditionally considered a mystical place of shamans. Pure nature and ancestral spirituality.</p>
         </div>
         <div class="ausflug-item">
             <div class="feature-image cafayate-placeholder" onclick="openGallery('cafayate', 5)" style="cursor: pointer;">
-                <img src="images/cafayate.jpg" alt="Cafayate" style="display: none;" onload="this.style.display='block'; this.parentElement.classList.remove('cafayate-placeholder');">
+                <img src="images/cafayate.jpg" alt="Cafayate" style="display:none;" onload="this.style.display='block'; this.parentElement.classList.remove('cafayate-placeholder');">
             </div>
             <h3>Cafayate (75 km)</h3>
             <p>The wine capital of the north! Charming colonial town, tastings at renowned wineries and the famous Torrontés wines of the region.</p>
@@ -838,7 +778,7 @@ footer {
 <section id="location">
     <h2 style="margin-bottom: 1rem;">Location</h2>
     <div class="anreise">
-        
+
         <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.15); margin-bottom: 0.8rem;">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.5071568280905!2d-65.85509869999996!3d-26.568096299999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9421ffc143304619%3A0xf36ddff127cacf28!2sCalchaqu%C3%AD%20Nature%20Lodge!5e0!3m2!1ses!2sar!4v1770485451132!5m2!1ses!2sar"
@@ -850,7 +790,7 @@ footer {
         </div>
 
         <p style="font-size: 0.95rem; margin-bottom: 0.6rem;"><strong>How to find us:</strong> Salas Km 3.5, Ruta 307, 112.5 km Ampimpa, Tucumán</p>
-        
+
         <div class="info-box">
             <h3>🚗 By Car</h3>
             <p>From Route 307 it is 3.5 km of gravel road to our lodge. We recommend your own vehicle to explore the region with flexibility.</p>
@@ -869,13 +809,13 @@ footer {
 </section>
 
 <section id="contact">
-    <div class="contacto" style="background:#8B4513; color:white; padding:2.6rem 1.8rem; border-radius:10px; text-align:center;">
-        <img src="images/logo.jpg" alt="Calchaquí Nature Lodge" style="height: 80px; width: auto; margin-bottom: 1.5rem; border-radius: 8px;">
-        <h2 style="color:white;">Contact & Reservations</h2>
+    <div style="background:#8B4513; color:white; padding:2.6rem 1.8rem; border-radius:10px; text-align:center;">
+        <img src="images/logo.jpg" alt="Calchaquí Nature Lodge" style="height:80px; width:auto; margin-bottom:1.5rem; border-radius:8px;">
+        <h2 style="color:white;">Contact &amp; Reservations</h2>
         <p style="font-size:1.18rem; margin:1.3rem 0;">We look forward to your message!</p>
-      <p style="margin:0.7rem 0; font-size:1.1rem;">
-    📧 <a href="mailto:calchaquinatural@gmail.com" style="color:#FFE4B5;">calchaquinatural@gmail.com</a>
-</p>
+        <p style="margin:0.7rem 0; font-size:1.1rem;">
+            📧 <a href="mailto:calchaquinatural@gmail.com" style="color:#FFE4B5;">calchaquinatural@gmail.com</a>
+        </p>
         <p style="margin:0.7rem 0; font-size:1.1rem;">
             📱 WhatsApp / Tel: <a href="https://wa.me/543815568281" style="color:#FFE4B5;">+54 381 556 8281</a>
         </p>
@@ -884,7 +824,6 @@ footer {
         </p>
     </div>
 </section>
-
 
 <footer>
     <p>© 2026 Calchaquí Nature Lodge – Ampimpa, Tucumán, Argentina</p>
@@ -908,24 +847,17 @@ window.openGallery = function(base, extra) {
     for (let i = 1; i <= extra; i++) {
         window.currentImages.push(`images/${base}${i}.jpg`);
     }
-
     window.currentIndex = 0;
-
     const img = document.getElementById('lightbox-img');
     const lightbox = document.getElementById('lightbox');
-
     img.src = window.currentImages[0];
     lightbox.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 };
 
 window.changeImg = function(dir) {
-    window.currentIndex =
-        (window.currentIndex + dir + window.currentImages.length)
-        % window.currentImages.length;
-
-    document.getElementById('lightbox-img').src =
-        window.currentImages[window.currentIndex];
+    window.currentIndex = (window.currentIndex + dir + window.currentImages.length) % window.currentImages.length;
+    document.getElementById('lightbox-img').src = window.currentImages[window.currentIndex];
 };
 
 window.closeLightbox = function() {
@@ -934,38 +866,25 @@ window.closeLightbox = function() {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-
     const lightbox = document.getElementById('lightbox');
     const img = document.getElementById('lightbox-img');
 
-    // Klick außerhalb schließt
     lightbox.addEventListener('click', function(e) {
-        if (e.target === lightbox) {
-            window.closeLightbox();
-        }
+        if (e.target === lightbox) window.closeLightbox();
     });
 
-    // Swipe DIREKT auf dem Bild
     let startX = 0;
-
     img.addEventListener('touchstart', function(e) {
         startX = e.changedTouches[0].clientX;
     });
-
     img.addEventListener('touchend', function(e) {
-        let endX = e.changedTouches[0].clientX;
-        let diff = startX - endX;
-
-        if (diff > 50) {
-            window.changeImg(1);
-        } else if (diff < -50) {
-            window.changeImg(-1);
-        }
+        let diff = startX - e.changedTouches[0].clientX;
+        if (diff > 50) window.changeImg(1);
+        else if (diff < -50) window.changeImg(-1);
     });
-
 });
 
-// Tastatur
+// Keyboard navigation
 document.addEventListener('keydown', function(e) {
     if (document.getElementById('lightbox').style.display === 'flex') {
         if (e.key === "ArrowLeft") window.changeImg(-1);
@@ -973,6 +892,12 @@ document.addEventListener('keydown', function(e) {
         if (e.key === "Escape") window.closeLightbox();
     }
 });
+
+// Always start at top (Mobile Fix)
+window.addEventListener("load", function() {
+    setTimeout(function() { window.scrollTo(0, 0); }, 0);
+});
 </script>
+
 </body>
 </html>
