@@ -156,10 +156,14 @@ section {
     max-width: 1200px;
     margin: 4rem auto;
     padding: 0 2rem;
-    scroll-margin-top: 100px;
+
 }
-[id] {
-    scroll-margin-top: 120px;
+section::before {
+    content: "";
+    display: block;
+    height: 100px; /* Höhe deines Headers */
+    margin-top: -100px;
+    visibility: hidden;
 }
 
 h2 {
