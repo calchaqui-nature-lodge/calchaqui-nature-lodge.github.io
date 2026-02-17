@@ -3,68 +3,518 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calchaquí Nature Lodge | Cabañas y Camping</title>
+
+    <title>Calchaquí Nature Lodge | Cabañas y Camping en Ampimpa, Tucumán</title>
+
+    <meta name="description" content="Calchaquí Nature Lodge en Ampimpa, Tucumán – alojamiento con cabañas y camping en el Valle Calchaquí. Naturaleza, energía solar und tourismus rural cerca del Observatorio de Ampimpa.">
+
+    <meta name="author" content="Calchaquí Nature Lodge">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="Calchaquí Nature Lodge – Cabañas y Camping en Ampimpa">
+    <meta property="og:description" content="Alojamiento en el Valle Calchaquí con cabañas rústicas und camping rodeado de naturaleza.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/panorama.jpg">
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Georgia', serif; line-height: 1.6; color: #333; background-color: #f9f7f4; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        header {
-            background-color: #8B4513;
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f7f4;
+}
 
-        nav { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-        
-        /* Fix für Logo und Titel in einer Zeile */
-        .nav-top {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            margin-bottom: 0.8rem;
-            min-height: 50px;
-        }
+header {
+    background-color: #8B4513;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-        .logo { position: absolute; left: 0; display: flex; align-items: center; }
-        .logo img { height: 48px; width: auto; border-radius: 4px; }
-        .site-title { font-size: 1.6rem; font-weight: bold; white-space: nowrap; }
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
 
-        .nav-bottom { display: flex; justify-content: space-between; align-items: center; }
-        nav ul { list-style: none; display: flex; gap: 1.5rem; }
-        nav ul a { color: white; text-decoration: none; font-size: 1rem; }
-        
-        .language-switcher { display: flex; gap: 0.5rem; }
-        .language-switcher a { color: white; text-decoration: none; font-size: 0.85rem; padding: 0.2rem 0.6rem; border: 1px solid rgba(255,255,255,0.3); border-radius: 3px; }
-        .language-switcher a.active { background: rgba(255,255,255,0.2); font-weight: bold; }
+.nav-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    position: relative;
+}
 
-        section { max-width: 1100px; margin: 3rem auto; padding: 0 1.5rem; scroll-margin-top: 140px; }
-        h2 { color: #8B4513; text-align: center; margin-bottom: 1.5rem; font-size: 2.2rem; }
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+}
 
-        .box { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-        .card { background: white; padding: 1.5rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        .img-container { width: 100%; height: 200px; background-size: cover; background-position: center; border-radius: 8px; cursor: pointer; margin-bottom: 1rem; }
+.logo img {
+    height: 48px;
+    width: auto;
+}
 
-        .contacto-section { background: #8B4513; color: white; padding: 3rem; border-radius: 15px; text-align: center; }
-        .contacto-section img { height: 80px; margin-bottom: 1.5rem; border-radius: 8px; }
-        .contacto-section a { color: #ffe4b5; text-decoration: none; }
+.site-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
 
-        @media (max-width: 768px) {
-            .nav-top { flex-direction: row; justify-content: center; }
-            .logo { position: static; margin-right: 10px; }
-            .site-title { font-size: 1.1rem; }
-            .nav-bottom { flex-direction: column; gap: 1rem; }
-            nav ul { flex-wrap: wrap; justify-content: center; gap: 0.8rem; }
-            section { scroll-margin-top: 200px; }
-        }
+.nav-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        #lightbox { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); justify-content: center; align-items: center; }
-        #lightbox img { max-width: 90%; max-height: 80%; }
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.language-switcher {
+    display: flex;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.language-switcher a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+}
+
+.language-switcher a:hover {
+    background-color: rgba(255,255,255,0.15);
+    color: white;
+}
+
+.language-switcher a.active {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    font-weight: 600;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+nav ul a:hover {
+    color: #D2691E;
+}
+
+.hero {
+    background: linear-gradient(rgba(139, 69, 19, 0.3), rgba(139, 69, 19, 0.3)),
+                url('images/welcome.jpg') center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    scroll-margin-top: 120px;
+}
+
+h2 {
+    color: #8B4513;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3 {
+    color: #A0826D;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.welcome {
+    background: linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)),
+                url('images/panoramas.jpg') center/cover;
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.welcome h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    color: #8B4513;
+}
+
+.welcome-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    text-align: left;
+}
+
+.welcome-content p {
+    margin-bottom: 1.2rem;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.welcome-closing {
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+    color: #8B4513;
+    font-size: 1.1rem;
+}
+
+.cabanas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cabana-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.cabana-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+.cabana-image:hover {
+    transform: scale(1.05);
+}
+
+.cabana-image::after {
+    content: "📷 Ver fotos";
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 18px;
+    font-size: 0.9rem;
+}
+
+.camping-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.camping-grid ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.camping-grid li {
+    padding: 0.3rem 0;
+    font-size: 1rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-item {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.feature-image {
+    height: 200px;
+    margin-bottom: 0.8rem;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.4s ease;
+}
+
+.feature-image:hover {
+    transform: scale(1.05);
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ausfluge-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.ausflug-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.ausflug-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.ausflug-item h3 {
+    color: #8B4513;
+    font-size: 1.1rem;
+    margin: 1rem 1.5rem 0.5rem 1.5rem;
+}
+
+.ausflug-item p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.anreise {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.kontakt {
+    background-color: #8B4513;
+    color: white;
+    padding: 3rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #654321;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+/* RESPONSIVE OPTIMIERUNG */
+@media (max-width: 768px) {
+    header {
+        position: sticky;
+        top: 0;
+        padding: 0.5rem 0;
+    }
+
+    .nav-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 0.5rem;
+        position: static;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .site-title {
+        font-size: 1.1rem;
+    }
+
+    .nav-bottom {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.4rem 0.8rem;
+        padding: 0;
+    }
+
+    nav ul a {
+        font-size: 0.85rem;
+    }
+
+    .language-switcher {
+        margin-top: 5px;
+        justify-content: center;
+    }
+
+    /* WICHTIG: Erhöht auf 180px, damit alle Überschriften sichtbar sind */
+    section {
+        scroll-margin-top: 180px; 
+        margin: 2rem auto;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .features-grid,
+    .ausfluge-list,
+    .welcome-content,
+    .camping-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Lightbox Styles */
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.lb-nav {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.lb-btn {
+    background: rgba(139, 69, 19, 0.8);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.lb-btn:hover {
+    background: rgba(139, 69, 19, 1);
+}
+
+.eco-note {
+    padding: 0.8rem;
+    margin: 0 0 1.2rem 0;
+}
+
+.eco-note h3 {
+    color: #2E7D32;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.eco-note p {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+
+.info-box {
+    margin-bottom: 0.25rem;
+    padding: 0.6rem;
+}
+
+.info-box h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.15rem;
+}
+
+.info-box p {
+    font-size: 0.88rem;
+    margin-bottom: 0;
+    line-height: 1.3;
+}
     </style>
 </head>
 <body>
@@ -72,15 +522,17 @@
 <header>
     <nav>
         <div class="nav-top">
-            <div class="logo"><img src="images/logo.jpg" alt="Logo"></div>
+            <div class="logo">
+                <img src="images/logo.jpg" alt="Calchaquí Nature Lodge">
+            </div>
             <div class="site-title">Calchaquí Nature Lodge</div>
         </div>
         <div class="nav-bottom">
             <ul>
-                <li><a href="#bienvenidos">Bienvenidos</a></li>
+                <li><a href="#bienvenida">Bienvenidos</a></li>
                 <li><a href="#cabanas">Cabañas</a></li>
                 <li><a href="#camping">Camping</a></li>
-                <li><a href="#comodidades">Ofrecemos</a></li>
+                <li><a href="#comodidades">¿Qué Ofrecemos?</a></li>
                 <li><a href="#excursiones">Excursiones</a></li>
                 <li><a href="#ubicacion">Ubicación</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -94,57 +546,203 @@
     </nav>
 </header>
 
-<section id="bienvenidos">
-    <div class="box">
+<section class="hero">
+    <h1>Calchaquí Nature Lodge</h1>
+    <p>Alojamiento con cabañas y camping en plena naturaleza del Valle Calchaquí.</p>
+</section>
+
+<section id="bienvenida">
+    <div class="welcome">
         <h2>Bienvenidos a un lugar diferente</h2>
-        <p>Descubra la tranquilidad y belleza del Valle Calchaquí a 2.300 metros de altura en Ampimpa, Tucumán.</p>
+        <div class="welcome-content">
+            <div>
+                <p>Descubra la tranquilidad y belleza del Valle Calchaquí. Nuestro lodge está ubicado a 2.300 metros sobre el nivel del mar en Ampimpa, Tucumán. Rodeado de un paisaje majestuoso.</p>
+                <p>Les damos la más cálida bienvenida a nuestro pequeño paraíso, donde la naturaleza, los cielos despejados y el aire puro son protagonistas. Aquí pueden desconectarse de la vida cotidiana und reconectarse con la naturaleza.</p>
+            </div>
+            <div>
+                <p>Nuestro lodge ofrece una experiencia única: desde cabañas circulares rústicas hasta espacios de camping bajo los algarrobos centenarios. Estamos ubicados cerca de la Ruta 307 und no lejos de la famosa Ruta 40.</p>
+                <p>Ideal para excursiones und relax al aire libre – piscina und noches estrelladas incluidas.</p>
+            </div>
+        </div>
+        <p class="welcome-closing">Bienvenidos a Calchaquí Nature Lodge – momentos inolvidables en la montaña.</p>
     </div>
 </section>
 
 <section id="cabanas">
     <h2>Nuestras Cabañas</h2>
-    <div class="grid">
-        <div class="card">
-            <div class="img-container" style="background-image:url('images/panorama.jpg')" onclick="openImg('panorama')"></div>
+    <div class="cabanas-grid">
+        <div class="cabana-card">
+            <div class="cabana-image" onclick="openGallery('panorama', 5)" style="background-image:url('images/panorama.jpg');"></div>
             <h3>Cabaña Panorama</h3>
-            <p>Confort y vistas increíbles para 4 personas.</p>
+            <p><strong>Hasta 4 personas</strong> • Amplia con baño, cocina equipada, heladera, agua caliente 24h und estufa a leña.</p>
+        </div>
+        <div class="cabana-card">
+            <div class="cabana-image" onclick="openGallery('antiguos', 5)" style="background-image:url('images/antiguos.jpg');"></div>
+            <h3>Cabaña Los Antiguos</h3>
+            <p><strong>Hasta 2 personas</strong> • Baño, agua caliente 24h, cocina, heladera und estufa a leña.</p>
+        </div>
+        <div class="cabana-card">
+            <div class="cabana-image" onclick="openGallery('parral', 5)" style="background-image:url('images/parral.jpg');"></div>
+            <h3>Cabaña Parral</h3>
+            <p><strong>Hasta 2 personas</strong> • Baño, agua caliente 24h, estufa a leña. Cocina compartida en el quincho.</p>
+        </div>
+    </div>
+</section>
+
+<section id="camping">
+    <h2>Área de Camping</h2>
+    <div class="camping-grid">
+        <div>
+            <h3>Espacio para carpas und vehículos camper</h3>
+            <p>Zona habilitada para tiendas de campaña und campers, en un entorno natural con vista panorámica al Valle Calchaquí.</p>
+            <p><strong>Incluye:</strong></p>
+            <ul>
+                <li>⚡ Conexión eléctrica</li>
+                <li>💧 Agua corriente</li>
+                <li>🚿 Baño privado para campers</li>
+                <li>🌳 Sombra natural bajo algarrobos</li>
+                <li>🏔️ Vistas panorámicas</li>
+                <li>🔥 Acceso al quincho</li>
+            </ul>
+        </div>
+        <div class="cabana-image" onclick="openGallery('camping', 5)" style="height: 350px; background-image: url('images/camping.jpg'); background-size: cover; background-position: center;"></div>
+    </div>
+</section>
+
+<section id="comodidades">
+    <h2 style="margin-bottom: 1.2rem;">¿Qué Ofrecemos?</h2>
+    
+    <div class="eco-note">
+        <h3>🌞 Energía solar – Viviendo en armonía con la naturaleza</h3>
+        <p>Nuestro lodge funciona al 100 % con energía solar, lo que nos permite preservar este paraíso natural. Para mantener este equilibrio, les pedimos que eviten el uso de aparatos de alto consumo eléctrico, como secadores de pelo o hervidores eléctricos. Esto es parte de nuestra auténtica experiencia de montaña fuera de la red.</p>
+    </div>
+    
+    <div class="features-grid">
+        <div class="feature-item">
+            <div class="feature-image" onclick="openGallery('pool', 5)" style="cursor: pointer;"><img src="images/pool.jpg" alt="Piscina"></div>
+            <h3>Piscina</h3>
+            <p>Refréscate con vistas al valle</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-image" onclick="openGallery('panoramas', 5)" style="cursor: pointer;"><img src="images/panoramas.jpg" alt="Vistas"></div>
+            <h3>Vistas Panorámicas</h3>
+            <p>Impresionantes vistas del valle</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-image" onclick="openGallery('quincho', 5)" style="cursor: pointer;"><img src="images/quincho.jpg" alt="Quincho"></div>
+            <h3>Quincho</h3>
+            <p>Cocina a leña und horno de barro</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-image" onclick="openGallery('stars', 5)" style="cursor: pointer;"><img src="images/stars.jpg" alt="Estrellas"></div>
+            <h3>Cielo Estrellado</h3>
+            <p>Perfecto para observar estrellas</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-image" onclick="openGallery('hotwater', 5)" style="cursor: pointer;"><img src="images/hotwater.jpg" alt="Agua Caliente"></div>
+            <h3>Agua Caliente 24h</h3>
+            <p>Agua caliente todo el día</p>
+        </div>
+        <div class="feature-item">
+            <div class="feature-image" onclick="openGallery('wifi', 5)" style="cursor: pointer;"><img src="images/wifi.jpg" alt="Internet"></div>
+            <h3>Internet</h3>
+            <p>WiFi disponible</p>
+        </div>
+    </div>
+</section>
+
+<section id="excursiones">
+    <h2 style="margin-bottom: 1rem;">Atracciones Cercanas</h2>
+    <div class="ausfluge-list">
+        <div class="ausflug-item">
+            <div class="feature-image" onclick="openGallery('ruta40', 5)" style="cursor: pointer;"><img src="images/ruta40.jpg" alt="Ruta 40"></div>
+            <h3>Ruta 40</h3>
+            <p>Estamos cerca de la legendaria Ruta 40, rodeados de pequeños pueblos encantadores. Cada uno con su propia historia, artesanías und tradiciones.</p>
+        </div>
+        <div class="ausflug-item">
+            <div class="feature-image" onclick="openGallery('pachamama', 5)" style="cursor: pointer;"><img src="images/pachamama.jpg" alt="Museo Pachamama"></div>
+            <h3>Museo Pachamama (8 km)</h3>
+            <p>Sumérgete en la cultura precolombina de la región. Fascinantes exposiciones de los pueblos indígenas del Valle Calchaquí.</p>
+        </div>
+        <div class="ausflug-item">
+            <div class="feature-image" onclick="openGallery('quilmes', 5)" style="cursor: pointer;"><img src="images/quilmes.jpg" alt="Quilmes"></div>
+            <h3>Ciudad Sagrada de Quilmes (30 km)</h3>
+            <p>Uno de los sitios arqueológicos más importantes de Argentina. Las ruinas bien conservadas cuentan la historia de la resistencia del pueblo Quilmes.</p>
         </div>
     </div>
 </section>
 
 <section id="ubicacion">
-    <h2>Ubicación</h2>
-    <div class="box">
-        <p>Salas Km 3.5, Ruta 307, 112.5 km Ampimpa, Tucumán.</p>
-        <div style="margin: 1.5rem 0; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3568.5071568280905!2d-65.85509869999996!3d-26.568096299999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9421ffc143304619%3A0xf36ddff127cacf28!2sCalchaqu%C3%AD%20Nature%20Lodge!5e0!3m2!1ses!2sar!4v1770485451132!5m2!1ses!2sar" width="100%" height="350" style="border:0;" loading="lazy"></iframe>
+    <h2 style="margin-bottom: 1rem;">Ubicación</h2>
+    <div class="anreise">
+        <p style="font-size: 0.95rem; margin-bottom: 0.6rem;"><strong>Cómo encontrarnos:</strong> Salas Km 3.5, Ruta 307, 112.5 km Ampimpa, Tucumán</p>
+        <div class="info-box">
+            <h3>🚗 En Auto</h3>
+            <p>Desde la Ruta 307 son 3,5 km de camino de ripio hasta nuestro lodge. Recomendamos vehículo propio.</p>
         </div>
-        <p><a href="https://maps.google.com" target="_blank" style="color:#8B4513; font-weight:bold;">📍 Ver ubicación y reseñas en Google Maps</a></p>
+        <div class="info-box">
+            <h3>🚌 ¿Sin Auto?</h3>
+            <p>Ofrecemos servicio de traslado desde Amaicha del Valle con costo adicional. Contáctanos antes.</p>
+        </div>
     </div>
 </section>
 
 <section id="contacto">
-    <div class="contacto-section">
-        <img src="images/logo.jpg" alt="Logo">
+    <div class="contacto">
+        <img src="images/logo.jpg" alt="Logo" style="height: 80px; margin-bottom: 1.5rem; border-radius: 8px;">
         <h2>Contacto & Reservas</h2>
-        <p>📱 WhatsApp: <a href="https://wa.me/543815568281">+54 381 556 8281</a></p>
-        <p>📧 Email: <a href="mailto:calchaquinatural@gmail.com">calchaquinatural@gmail.com</a></p>
-        <br>
-        <h3 style="color:#ffe4b5; font-style:italic;">¡Los esperamos!</h3>
+        <p>¡Esperamos tu mensaje!</p>
+        <p>📧 <a href="mailto:calchaquinatural@gmail.com" style="color:#FFE4B5;">calchaquinatural@gmail.com</a></p>
+        <p>📱 WhatsApp: <a href="https://wa.me/543815568281" style="color:#FFE4B5;">+54 381 556 8281</a></p>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 Calchaquí Nature Lodge – Ampimpa, Argentina</p>
+    <p>© 2026 Calchaquí Nature Lodge – Ampimpa, Tucumán, Argentina</p>
 </footer>
 
-<div id="lightbox" onclick="this.style.display='none'"><img id="lightbox-img" src=""></div>
+<div id="lightbox">
+    <span onclick="closeLightbox()" style="position:absolute;top:25px;right:35px;color:white;font-size:60px;cursor:pointer;">×</span>
+    <img id="lightbox-img" src="" alt="">
+    <div class="lb-nav">
+        <button class="lb-btn" onclick="changeImg(-1)">❮ Anterior</button>
+        <button class="lb-btn" onclick="changeImg(1)">Siguiente ❯</button>
+    </div>
+</div>
 
 <script>
-    function openImg(name) {
-        document.getElementById('lightbox-img').src = 'images/' + name + '.jpg';
-        document.getElementById('lightbox').style.display = 'flex';
+window.currentImages = [];
+window.currentIndex = 0;
+
+window.openGallery = function(base, extra) {
+    window.currentImages = [`images/${base}.jpg`];
+    for (let i = 1; i <= extra; i++) {
+        window.currentImages.push(`images/${base}${i}.jpg`);
     }
+    window.currentIndex = 0;
+    const img = document.getElementById('lightbox-img');
+    const lightbox = document.getElementById('lightbox');
+    img.src = window.currentImages[0];
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+};
+
+window.changeImg = function(dir) {
+    window.currentIndex = (window.currentIndex + dir + window.currentImages.length) % window.currentImages.length;
+    document.getElementById('lightbox-img').src = window.currentImages[window.currentIndex];
+};
+
+window.closeLightbox = function() {
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.style.overflow = 'auto';
+};
+
+document.addEventListener('DOMContentLoaded', function() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) window.closeLightbox();
+    });
+});
 </script>
 
 </body>
