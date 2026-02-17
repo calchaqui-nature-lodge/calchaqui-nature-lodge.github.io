@@ -942,7 +942,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Swipe DIREKT auf dem Bild
+    // Swipe direkt auf dem Bild
     let startX = 0;
 
     img.addEventListener('touchstart', function(e) {
@@ -962,7 +962,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-// Tastatur
+// Tastatursteuerung
 document.addEventListener('keydown', function(e) {
     if (document.getElementById('lightbox').style.display === 'flex') {
         if (e.key === "ArrowLeft") window.changeImg(-1);
@@ -970,7 +970,15 @@ document.addEventListener('keydown', function(e) {
         if (e.key === "Escape") window.closeLightbox();
     }
 });
+
+// Immer oben starten (Mobile Fix)
+window.addEventListener("load", function() {
+    setTimeout(function() {
+        window.scrollTo(0, 0);
+    }, 0);
+});
 </script>
+
 
 </body>
 </html>
