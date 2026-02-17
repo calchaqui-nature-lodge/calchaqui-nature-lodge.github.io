@@ -900,6 +900,11 @@ footer {
 window.currentImages = [];
 window.currentIndex = 0;
 
+// Scroll-Restoration deaktivieren
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
 window.openGallery = function(base, extra) {
     window.currentImages = [`images/${base}.jpg`];
     for (let i = 1; i <= extra; i++) {
@@ -932,17 +937,18 @@ window.closeLightbox = function() {
 
 document.addEventListener('DOMContentLoaded', function() {
 
+    // Immer ganz oben starten
+    window.scrollTo(0, 0);
+
     const lightbox = document.getElementById('lightbox');
     const img = document.getElementById('lightbox-img');
 
-    // Klick außerhalb schließt
     lightbox.addEventListener('click', function(e) {
         if (e.target === lightbox) {
             window.closeLightbox();
         }
     });
 
-    // Swipe direkt auf dem Bild
     let startX = 0;
 
     img.addEventListener('touchstart', function(e) {
@@ -962,7 +968,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-// Tastatursteuerung
 document.addEventListener('keydown', function(e) {
     if (document.getElementById('lightbox').style.display === 'flex') {
         if (e.key === "ArrowLeft") window.changeImg(-1);
@@ -970,15 +975,6 @@ document.addEventListener('keydown', function(e) {
         if (e.key === "Escape") window.closeLightbox();
     }
 });
-
-// Immer oben starten (Mobile Fix)
-window.addEventListener("load", function() {
-    setTimeout(function() {
-        window.scrollTo(0, 0);
-    }, 0);
-});
 </script>
-
-
 </body>
 </html>
