@@ -840,7 +840,7 @@ footer {
     </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 window.currentImages = [];
 window.currentIndex = 0;
 
@@ -892,4 +892,16 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('keydown', function(e) {
     if (document.getElementById('lightbox').style.display === 'flex') {
         if (e.key === "ArrowLeft") window.changeImg(-1);
-        if (e.key === "ArrowRight") 
+        if (e.key === "ArrowRight") window.changeImg(1);
+        if (e.key === "Escape") window.closeLightbox();
+    }
+});
+
+// Immer oben starten (Mobile Fix)
+window.addEventListener("load", function() {
+    setTimeout(function() { window.scrollTo(0, 0); }, 0);
+});
+</script>
+
+</body>
+</html>
