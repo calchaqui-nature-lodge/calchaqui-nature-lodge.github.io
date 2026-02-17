@@ -6,7 +6,7 @@
 
     <title>Calchaquí Nature Lodge | Cabañas y Camping en Ampimpa, Tucumán</title>
 
-    <meta name="description" content="Calchaquí Nature Lodge en Ampimpa, Tucumán – alojamiento con cabañas y camping en el Valle Calchaquí. Naturaleza, energía solar y turismo rural cerca del Observatorio de Ampimpa.">
+    <meta name="description" content="Calchaquí Nature Lodge en Ampimpa, Tucumán – alojamiento con cabañas y camping en el Valle Calchaquí. Naturaleza, energía solar y turismo rural cerca des Observatorio de Ampimpa.">
 
     <meta name="author" content="Calchaquí Nature Lodge">
     <meta name="robots" content="index, follow">
@@ -181,34 +181,6 @@ p {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.welcome h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2.2rem;
-    color: #8B4513;
-}
-
-.welcome-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2.5rem;
-    text-align: left;
-}
-
-.welcome-content p {
-    margin-bottom: 1.2rem;
-    font-size: 1.05rem;
-    line-height: 1.7;
-}
-
-.welcome-closing {
-    text-align: center;
-    margin-top: 2rem;
-    font-style: italic;
-    color: #8B4513;
-    font-size: 1.1rem;
-}
-
 .cabanas-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -221,7 +193,6 @@ p {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
 }
 
 .cabana-image {
@@ -264,16 +235,6 @@ p {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.camping-grid ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.camping-grid li {
-    padding: 0.3rem 0;
-    font-size: 1rem;
-}
-
 .features-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -298,10 +259,6 @@ p {
     transition: transform 0.4s ease;
 }
 
-.feature-image:hover {
-    transform: scale(1.05);
-}
-
 .feature-image img {
     width: 100%;
     height: 100%;
@@ -319,25 +276,7 @@ p {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
-}
-
-.ausflug-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-}
-
-.ausflug-item h3 {
-    color: #8B4513;
-    font-size: 1.1rem;
-    margin: 1rem 1.5rem 0.5rem 1.5rem;
-}
-
-.ausflug-item p {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin: 0 1.5rem 1.5rem 1.5rem;
 }
 
 .anreise {
@@ -363,10 +302,12 @@ footer {
     margin-top: 4rem;
 }
 
-/* RESPONSIVE OPTIMIERUNG - NUR MOBILE */
+/* MOBILE OPTIMIERUNG */
 @media (max-width: 768px) {
     header {
-        padding: 0.4rem 0;
+        position: sticky;
+        top: 0;
+        padding: 0.5rem 0;
     }
 
     .nav-top {
@@ -374,10 +315,6 @@ footer {
         justify-content: center;
         gap: 8px;
         margin-bottom: 0.4rem;
-        position: static;
-    }
-
-    .logo {
         position: static;
     }
 
@@ -406,12 +343,7 @@ footer {
         font-size: 0.82rem;
     }
 
-    .language-switcher {
-        margin-top: 3px;
-        justify-content: center;
-    }
-
-    /* WEITER ERHÖHT: Verhindert das Verdecken der Überschriften */
+    /* FIX: Genug Platz damit Überschriften nicht unter den Header rutschen */
     section {
         scroll-margin-top: 210px; 
         margin: 2rem auto;
@@ -421,27 +353,17 @@ footer {
         font-size: 2.1rem;
     }
 
-    h2 {
-        font-size: 1.7rem;
-    }
-
-    .features-grid,
-    .ausfluge-list,
-    .welcome-content,
-    .camping-grid {
+    .features-grid, .ausfluge-list, .camping-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* Lightbox Styles */
+/* Lightbox */
 #lightbox {
     display: none;
     position: fixed;
     z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    left: 0; top: 0; width: 100%; height: 100%;
     background-color: rgba(0,0,0,0.9);
     justify-content: center;
     align-items: center;
@@ -449,7 +371,7 @@ footer {
 
 #lightbox-img {
     max-width: 90%;
-    max-height: 90%;
+    max-height: 80%;
     object-fit: contain;
 }
 
@@ -464,41 +386,26 @@ footer {
     background: rgba(139, 69, 19, 0.8);
     color: white;
     border: none;
-    padding: 12px 24px;
-    font-size: 1.1rem;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .eco-note {
-    padding: 0.8rem;
-    margin: 0 0 1.2rem 0;
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
 .eco-note h3 {
     color: #2E7D32;
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-}
-
-.eco-note p {
-    font-size: 0.85rem;
-    line-height: 1.3;
+    font-size: 1.1rem;
 }
 
 .info-box {
-    margin-bottom: 0.25rem;
-    padding: 0.6rem;
-}
-
-.info-box h3 {
-    font-size: 1.05rem;
-    margin-bottom: 0.15rem;
-}
-
-.info-box p {
-    font-size: 0.88rem;
-    line-height: 1.3;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background: #fdfdfd;
+    border-radius: 5px;
 }
     </style>
 </head>
@@ -507,9 +414,7 @@ footer {
 <header>
     <nav>
         <div class="nav-top">
-            <div class="logo">
-                <img src="images/logo.jpg" alt="Calchaquí Nature Lodge">
-            </div>
+            <div class="logo"><img src="images/logo.jpg" alt="Logo"></div>
             <div class="site-title">Calchaquí Nature Lodge</div>
         </div>
         <div class="nav-bottom">
@@ -539,17 +444,7 @@ footer {
 <section id="bienvenida">
     <div class="welcome">
         <h2>Bienvenidos a un lugar diferente</h2>
-        <div class="welcome-content">
-            <div>
-                <p>Descubra la tranquilidad y belleza del Valle Calchaquí. Nuestro lodge está ubicado a 2.300 metros sobre el nivel del mar en Ampimpa, Tucumán. Rodeado de un paisaje majestuoso.</p>
-                <p>Les damos la más cálida bienvenida a nuestro pequeño paraíso, donde la naturaleza, los cielos despejados und el aire puro son protagonistas. Aquí pueden desconectarse de la vida cotidiana und reconectarse con la naturaleza.</p>
-            </div>
-            <div>
-                <p>Nuestro lodge ofrece una experiencia única: desde cabañas circulares rústicas hasta espacios de camping bajo los algarrobos centenarios. Estamos ubicados cerca de la Ruta 307 und no lejos de la famosa Ruta 40.</p>
-                <p>Ideal para excursiones und relax al aire libre – piscina und noches estrelladas incluidas.</p>
-            </div>
-        </div>
-        <p class="welcome-closing">Bienvenidos a Calchaquí Nature Lodge – momentos inolvidables en la montaña.</p>
+        <p>Descubra la tranquilidad y belleza del Valle Calchaquí en Ampimpa, Tucumán. Un pequeño paraíso rodeado de naturaleza y aire puro.</p>
     </div>
 </section>
 
@@ -557,30 +452,4 @@ footer {
     <h2>Nuestras Cabañas</h2>
     <div class="cabanas-grid">
         <div class="cabana-card">
-            <div class="cabana-image" onclick="openGallery('panorama', 5)" style="background-image:url('images/panorama.jpg');"></div>
-            <h3>Cabaña Panorama</h3>
-            <p><strong>Hasta 4 personas</strong> • Amplia con baño, cocina equipada, heladera, agua caliente 24h und estufa a leña.</p>
-        </div>
-        <div class="cabana-card">
-            <div class="cabana-image" onclick="openGallery('antiguos', 5)" style="background-image:url('images/antiguos.jpg');"></div>
-            <h3>Cabaña Los Antiguos</h3>
-            <p><strong>Hasta 2 personas</strong> • Baño, agua caliente 24h, cocina, heladera und estufa a leña.</p>
-        </div>
-        <div class="cabana-card">
-            <div class="cabana-image" onclick="openGallery('parral', 5)" style="background-image:url('images/parral.jpg');"></div>
-            <h3>Cabaña Parral</h3>
-            <p><strong>Hasta 2 personas</strong> • Baño, agua caliente 24h, estufa a leña. Cocina compartida en el quincho.</p>
-        </div>
-    </div>
-</section>
-
-<section id="camping">
-    <h2>Área de Camping</h2>
-    <div class="camping-grid">
-        <div>
-            <h3>Espacio para carpas und vehículos camper</h3>
-            <p>Zona habilitada para tiendas de campaña und campers, en un entorno natural con vista panorámica al Valle Calchaquí.</p>
-            <p><strong>Incluye:</strong></p>
-            <ul>
-                <li>⚡ Conexión eléctrica</li>
-                <li>💧 Agua corriente</li>
+            <div
