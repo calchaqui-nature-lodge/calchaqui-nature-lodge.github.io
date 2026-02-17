@@ -7,7 +7,6 @@
     <title>Calchaquí Nature Lodge | Cabañas y Camping en Ampimpa, Tucumán</title>
 
     <meta name="description" content="Calchaquí Nature Lodge en Ampimpa, Tucumán – alojamiento con cabañas y camping en el Valle Calchaquí. Naturaleza, energía solar y turismo rural cerca del Observatorio de Ampimpa.">
-
     <meta name="author" content="Calchaquí Nature Lodge">
     <meta name="robots" content="index, follow">
 
@@ -17,11 +16,7 @@
     <meta property="og:image" content="images/panorama.jpg">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Georgia', serif;
@@ -61,16 +56,9 @@
             left: 0;
         }
 
-        .logo img {
-            height: 48px;
-            width: auto;
-            border-radius: 4px;
-        }
+        .logo img { height: 48px; width: auto; border-radius: 4px; }
 
-        .site-title {
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
+        .site-title { font-size: 1.4rem; font-weight: bold; }
 
         .nav-bottom {
             display: flex;
@@ -91,14 +79,9 @@
             font-size: 1rem;
         }
 
-        nav ul a:hover {
-            color: #D2691E;
-        }
+        nav ul a:hover { color: #D2691E; }
 
-        .language-switcher {
-            display: flex;
-            gap: 0.5rem;
-        }
+        .language-switcher { display: flex; gap: 0.5rem; }
 
         .language-switcher a {
             color: white;
@@ -133,7 +116,7 @@
             max-width: 1200px;
             margin: 4rem auto;
             padding: 0 2rem;
-            scroll-margin-top: 140px;
+            scroll-margin-top: 140px; /* Damit Titel nicht unter dem Header verschwinden */
         }
 
         h2 { color: #8B4513; font-size: 2.2rem; margin-bottom: 2rem; text-align: center; }
@@ -149,13 +132,6 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2.5rem;
-        }
-
-        .welcome-closing {
-            text-align: center;
-            margin-top: 2rem;
-            font-style: italic;
-            color: #8B4513;
         }
 
         .cabanas-grid {
@@ -241,7 +217,7 @@
 
         .info-box { margin-top: 1rem; padding: 1rem; border-left: 4px solid #8B4513; background: #fdfdfd; }
 
-        .contacto-box {
+        .contacto {
             background-color: #8B4513;
             color: white;
             padding: 3rem;
@@ -249,10 +225,11 @@
             text-align: center;
         }
 
-        .contacto-box a { color: #FFE4B5; text-decoration: none; }
+        .contacto a { color: #FFE4B5; text-decoration: none; }
 
         footer { background-color: #654321; color: white; text-align: center; padding: 2rem; margin-top: 4rem; }
 
+        /* Lightbox */
         #lightbox {
             display: none;
             position: fixed;
@@ -319,15 +296,15 @@
         <h2>Bienvenidos a un lugar diferente</h2>
         <div class="welcome-content">
             <div>
-                <p>Descubra la tranquilidad y belleza del Valle Calchaquí. Nuestro lodge está ubicado a 2.300 metros sobre el nivel del mar en Ampimpa, Tucumán.</p>
-                <p>Les damos la más cálida bienvenida a nuestro pequeño paraíso, donde la naturaleza, los cielos despejados y el aire puro son protagonistas.</p>
+                <p>Descubra la tranquilidad y belleza del Valle Calchaquí. Nuestro lodge está ubicado a 2.300 metros sobre el nivel del mar en Ampimpa, Tucumán. Rodeado de un paisaje majestuoso.</p>
+                <p>Les damos la más cálida bienvenida a nuestro pequeño paraíso, donde la naturaleza, los cielos despejados y el aire puro son protagonistas. Aquí pueden desconectarse de la vida cotidiana und reconectarse con la naturaleza.</p>
             </div>
             <div>
-                <p>Nuestro lodge ofrece una experiencia única: desde cabañas circulares rústicas hasta espacios de camping bajo los algarrobos centenarios.</p>
-                <p>Ideal para excursiones y relax al aire libre – piscina y noches estrelladas incluidas.</p>
+                <p>Nuestro lodge ofrece una experiencia única: desde cabañas circulares rústicas hasta espacios de camping bajo los algarrobos centenarios. Estamos ubicados cerca de la Ruta 307 und no lejos de la famosa Ruta 40.</p>
+                <p>Ideal para excursiones und relax al aire libre – piscina und noches estrelladas incluidas.</p>
             </div>
         </div>
-        <p class="welcome-closing">Bienvenidos a Calchaquí Nature Lodge – momentos inolvidables en la montaña.</p>
+        <p style="text-align: center; margin-top: 2rem; font-style: italic; color: #8B4513;">Bienvenidos a Calchaquí Nature Lodge – momentos inolvidables en la montaña.</p>
     </div>
 </section>
 
@@ -337,12 +314,12 @@
         <div class="cabana-card">
             <div class="cabana-image" onclick="openGallery('panorama', 5)" style="background-image:url('images/panorama.jpg');"></div>
             <h3>Cabaña Panorama</h3>
-            <p><strong>Hasta 4 personas</strong> • Amplia con baño, cocina equipada, heladera, agua caliente 24h y estufa a leña.</p>
+            <p><strong>Hasta 4 personas</strong> • Amplia con baño, cocina equipada, heladera, agua caliente 24h und estufa a leña.</p>
         </div>
         <div class="cabana-card">
             <div class="cabana-image" onclick="openGallery('antiguos', 5)" style="background-image:url('images/antiguos.jpg');"></div>
             <h3>Cabaña Los Antiguos</h3>
-            <p><strong>Hasta 2 personas</strong> • Baño, agua caliente 24h, cocina, heladera y estufa a leña.</p>
+            <p><strong>Hasta 2 personas</strong> • Baño, agua caliente 24h, cocina, heladera und estufa a leña.</p>
         </div>
         <div class="cabana-card">
             <div class="cabana-image" onclick="openGallery('parral', 5)" style="background-image:url('images/parral.jpg');"></div>
@@ -356,9 +333,9 @@
     <h2>Área de Camping</h2>
     <div class="camping-grid">
         <div>
-            <h3>Espacio para carpas y vehículos camper</h3>
-            <p>Zona habilitada con vista panorámica al Valle Calchaquí.</p>
-            <ul>
+            <h3>Espacio para carpas und vehículos camper</h3>
+            <p>Zona habilitada para tiendas de campaña und campers, en un entorno natural con vista panorámica al Valle Calchaquí.</p>
+            <ul style="list-style: none; margin-top: 1rem;">
                 <li>⚡ Conexión eléctrica</li>
                 <li>💧 Agua corriente</li>
                 <li>🚿 Baño privado para campers</li>
@@ -374,7 +351,7 @@
     <h2>¿Qué Ofrecemos?</h2>
     <div class="eco-note">
         <h3>🌞 Energía solar – Viviendo en armonía con la naturaleza</h3>
-        <p>Nuestro lodge funciona al 100 % con energía solar. Les pedimos que eviten el uso de aparatos de alto consumo (secadores, hervidores).</p>
+        <p>Nuestro lodge funciona al 100 % con energía solar. Les pedimos que eviten el uso de aparatos de alto consumo (secadores, hervidores) para preservar el equilibrio.</p>
     </div>
     <div class="features-grid">
         <div class="feature-item">
@@ -387,19 +364,7 @@
         </div>
         <div class="feature-item">
             <div class="feature-image" onclick="openGallery('quincho', 5)"><img src="images/quincho.jpg" alt="Quincho"></div>
-            <h3>Quincho</h3><p>Cocina a leña y horno de barro.</p>
-        </div>
-        <div class="feature-item">
-            <div class="feature-image" onclick="openGallery('stars', 5)"><img src="images/stars.jpg" alt="Estrellas"></div>
-            <h3>Cielo Estrellado</h3><p>Perfecto para observar estrellas.</p>
-        </div>
-        <div class="feature-item">
-            <div class="feature-image" onclick="openGallery('hotwater', 5)"><img src="images/hotwater.jpg" alt="Agua"></div>
-            <h3>Agua Caliente 24h</h3><p>Agua caliente todo el día.</p>
-        </div>
-        <div class="feature-item">
-            <div class="feature-image" onclick="openGallery('wifi', 5)"><img src="images/wifi.jpg" alt="Wifi"></div>
-            <h3>Internet</h3><p>WiFi disponible.</p>
+            <h3>Quincho</h3><p>Cocina a leña und horno de barro.</p>
         </div>
     </div>
 </section>
@@ -409,33 +374,15 @@
     <div class="ausfluge-list">
         <div class="ausflug-item">
             <div class="feature-image" onclick="openGallery('ruta40', 5)"><img src="images/ruta40.jpg" alt="Ruta 40"></div>
-            <h3>Ruta 40</h3>
-            <p>Cerca de la legendaria Ruta 40 y pueblos auténticos.</p>
-        </div>
-        <div class="ausflug-item">
-            <div class="feature-image" onclick="openGallery('pachamama', 5)"><img src="images/pachamama.jpg" alt="Museo Pachamama"></div>
-            <h3>Museo Pachamama (8 km)</h3>
-            <p>Cultura precolombina de la región.</p>
+            <h3>Ruta 40</h3><p>Cerca de la legendaria Ruta 40 und pueblos auténticos.</p>
         </div>
         <div class="ausflug-item">
             <div class="feature-image" onclick="openGallery('quilmes', 5)"><img src="images/quilmes.jpg" alt="Quilmes"></div>
-            <h3>Ciudad Sagrada de Quilmes (30 km)</h3>
-            <p>Sitio arqueológico fundamental de la resistencia Quilmes.</p>
+            <h3>Ciudad Sagrada de Quilmes</h3><p>Sitio arqueológico fundamental de la resistencia Quilmes.</p>
         </div>
         <div class="ausflug-item">
             <div class="feature-image" onclick="openGallery('observatory', 5)"><img src="images/observatory.jpg" alt="Observatorio"></div>
-            <h3>Observatorio de Ampimpa (8,5 km)</h3>
-            <p>Destino popular para el astroturismo.</p>
-        </div>
-        <div class="ausflug-item">
-            <div class="feature-image" onclick="openGallery('laguna', 5)"><img src="images/laguna.jpg" alt="Laguna"></div>
-            <h3>Laguna de los Amaicheños</h3>
-            <p>Sitio místico de naturaleza pura y espiritualidad.</p>
-        </div>
-        <div class="ausflug-item">
-            <div class="feature-image" onclick="openGallery('cafayate', 5)"><img src="images/cafayate.jpg" alt="Cafayate"></div>
-            <h3>Cafayate (75 km)</h3>
-            <p>Capital del vino del norte.</p>
+            <h3>Observatorio de Ampimpa</h3><p>Destino popular para el astroturismo a 2.560 metros.</p>
         </div>
     </div>
 </section>
@@ -452,19 +399,15 @@
             <p>Desde la Ruta 307 son 3,5 km de camino de ripio.</p>
         </div>
         <div class="info-box">
-            <h3>🚌 ¿Sin Auto?</h3>
-            <p>Servicio de traslado desde Amaicha del Valle (8 km).</p>
-        </div>
-        <div class="info-box">
-            <h3>🛒 Nota Importante</h3>
-            <p>¡Por favor trae tus provisiones!</p>
+            <h3>🚌 Traslado</h3>
+            <p>Ofrecemos servicio de traslado desde Amaicha del Valle (8 km).</p>
         </div>
     </div>
 </section>
 
 <section id="contacto">
-    <div class="contacto-box">
-        <img src="images/logo.jpg" alt="Logo" style="height:80px; margin-bottom:1.5rem; border-radius:8px;">
+    <div class="contacto">
+        <img src="images/logo.jpg" alt="Logo" style="height: 80px; margin-bottom: 1.5rem; border-radius: 8px;">
         <h2>Contacto & Reservas</h2>
         <p>📧 <a href="mailto:calchaquinatural@gmail.com">calchaquinatural@gmail.com</a></p>
         <p>📱 WhatsApp: <a href="https://wa.me/543815568281">+54 381 556 8281</a></p>
@@ -507,21 +450,15 @@
         document.body.style.overflow = 'auto';
     };
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const lightbox = document.getElementById('lightbox');
-        const img = document.getElementById('lightbox-img');
-
-        lightbox.addEventListener('click', function(e) {
-            if (e.target === lightbox) window.closeLightbox();
-        });
-
-        let startX = 0;
-        img.addEventListener('touchstart', (e) => startX = e.changedTouches[0].clientX);
-        img.addEventListener('touchend', (e) => {
-            let diff = startX - e.changedTouches[0].clientX;
-            if (diff > 50) window.changeImg(1);
-            if (diff < -50) window.changeImg(-1);
-        });
+    // Swipe-Erkennung für Mobile
+    let startX = 0;
+    const lbImg = document.getElementById('lightbox-img');
+    
+    lbImg.addEventListener('touchstart', (e) => startX = e.changedTouches[0].clientX);
+    lbImg.addEventListener('touchend', (e) => {
+        let diff = startX - e.changedTouches[0].clientX;
+        if (diff > 50) window.changeImg(1);
+        if (diff < -50) window.changeImg(-1);
     });
 
     document.addEventListener('keydown', (e) => {
@@ -532,6 +469,5 @@
         }
     });
 </script>
-
 </body>
 </html>
