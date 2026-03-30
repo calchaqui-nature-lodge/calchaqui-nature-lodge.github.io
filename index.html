@@ -875,7 +875,7 @@ window.currentIndex = 0;
 
 window.openGallery = function(base, extra) {
     window.currentImages = [`images/${base}.jpg`];
-    for (let i = 1; i <= extra; i++) {
+    for (let i = 0; i <= extra; i++) {
         window.currentImages.push(`images/${base}${i}.jpg`);
     }
     window.currentIndex = 0;
